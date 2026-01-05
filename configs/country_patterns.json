@@ -1,0 +1,90 @@
+{
+  "chile": {
+    "country_code": "CL",
+    "id_type": "RUT",
+    "id_patterns": {
+      "format_with_dots": "^\\d{1,2}\\.\\d{3}\\.\\d{3}-[0-9Kk]$",
+      "format_simple": "^\\d{7,8}-[0-9Kk]$",
+      "min_value": 1000000,
+      "max_value": 50000000
+    },
+    "phone_patterns": {
+      "mobile": "^\\+?56\\s?9\\s?\\d{4}\\s?\\d{4}$",
+      "landline": "^\\+?56\\s?2\\s?\\d{4}\\s?\\d{4}$",
+      "area_codes": ["2", "32", "33", "34", "35", "41", "42", "43", "45", "51", "52", "53", "55", "57", "58", "61", "63", "64", "65", "67", "71", "72", "73", "75"]
+    },
+    "common_first_names": ["Juan", "María", "José", "Carlos", "Ana", "Luis", "Carmen", "Pedro", "Rosa", "Jorge", "Isabel", "Francisco", "Patricia", "Miguel", "Gloria", "Manuel", "Teresa", "Antonio", "Mercedes", "Andrés"],
+    "common_surnames": ["González", "Muñoz", "Rojas", "Díaz", "Pérez", "Soto", "Contreras", "Silva", "Martínez", "Sepúlveda", "Morales", "Rodríguez", "López", "Fuentes", "Hernández", "Torres", "Araya", "Flores", "Espinoza", "Valenzuela"],
+    "street_types": ["Avenida", "Calle", "Pasaje", "Av.", "Psj."],
+    "communes": ["Providencia", "Las Condes", "Vitacura", "Santiago", "Ñuñoa", "La Reina", "Maipú", "Puente Alto", "La Florida", "Peñalolén"]
+  },
+  "uruguay": {
+    "country_code": "UY",
+    "id_type": "CI",
+    "id_patterns": {
+      "format_with_dots": "^\\d{1}\\.\\d{3}\\.\\d{3}-\\d$",
+      "format_simple": "^\\d{7,8}-\\d$",
+      "min_value": 1000000,
+      "max_value": 9000000
+    },
+    "phone_patterns": {
+      "mobile": "^\\+?598\\s?9[1-9]\\s?\\d{3}\\s?\\d{3}$",
+      "landline": "^\\+?598\\s?2\\s?\\d{3}\\s?\\d{4}$",
+      "area_codes": ["2", "42", "43", "44", "45", "46", "47"]
+    },
+    "common_first_names": ["Juan", "María", "José", "Carlos", "Ana", "Luis", "Carmen", "Pedro", "Rosa", "Jorge", "Lucía", "Fernando", "Patricia", "Diego", "Laura", "Martín", "Sofía", "Pablo", "Valentina", "Santiago"],
+    "common_surnames": ["Rodríguez", "González", "Pérez", "Fernández", "García", "López", "Martínez", "Sánchez", "Díaz", "Hernández", "Silva", "Torres", "Álvarez", "Suárez", "Castro", "Vázquez", "Romero", "Benítez", "Acosta", "Medina"],
+    "street_types": ["Avenida", "Calle", "Bulevar", "Rambla", "Av."],
+    "neighborhoods": ["Centro", "Pocitos", "Carrasco", "Punta Carretas", "Cordón", "Malvín", "Buceo", "Parque Rodó", "Ciudad Vieja", "Tres Cruces"]
+  },
+  "colombia": {
+    "country_code": "CO",
+    "id_type": "CC",
+    "id_patterns": {
+      "format": "^\\d{8,10}$",
+      "min_value": 1000000,
+      "max_value": 1800000000
+    },
+    "phone_patterns": {
+      "mobile": "^\\+?57\\s?3[0-9]{2}\\s?\\d{3}\\s?\\d{4}$",
+      "landline": "^\\+?57\\s?[1-8]\\s?\\d{3}\\s?\\d{4}$",
+      "area_codes": ["1", "2", "4", "5", "6", "7", "8"]
+    },
+    "common_first_names": ["Juan", "María", "Carlos", "Ana", "José", "Luz", "Luis", "Gloria", "Jorge", "Martha", "Oscar", "Sandra", "Héctor", "Diana", "Fernando", "Claudia", "Miguel", "Patricia", "Andrés", "Carolina"],
+    "common_surnames": ["Rodríguez", "García", "Martínez", "González", "Hernández", "López", "Díaz", "Pérez", "Gómez", "Sánchez", "Ramírez", "Torres", "Flores", "Rivera", "Morales", "Gutiérrez", "Mendoza", "Vargas", "Castro", "Jiménez"],
+    "street_types": ["Carrera", "Calle", "Diagonal", "Transversal", "Avenida", "Cra.", "Cl."],
+    "cities": ["Bogotá", "Medellín", "Cali", "Barranquilla", "Cartagena", "Bucaramanga", "Pereira", "Manizales"]
+  },
+  "brazil": {
+    "country_code": "BR",
+    "id_type": "CPF",
+    "id_patterns": {
+      "format_with_dots": "^\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}$",
+      "format_simple": "^\\d{11}$",
+      "min_value": 10000000000,
+      "max_value": 99999999999
+    },
+    "phone_patterns": {
+      "mobile": "^\\+?55\\s?\\(?\\d{2}\\)?\\s?9\\s?\\d{4}[\\s-]?\\d{4}$",
+      "landline": "^\\+?55\\s?\\(?\\d{2}\\)?\\s?\\d{4}[\\s-]?\\d{4}$",
+      "area_codes": ["11", "12", "13", "14", "15", "16", "17", "18", "19", "21", "22", "24", "27", "28", "31", "32", "33", "34", "35", "37", "38", "41", "42", "43", "44", "45", "46", "47", "48", "49", "51", "53", "54", "55", "61", "62", "63", "64", "65", "66", "67", "68", "69", "71", "73", "74", "75", "77", "79", "81", "82", "83", "84", "85", "86", "87", "88", "89", "91", "92", "93", "94", "95", "96", "97", "98", "99"]
+    },
+    "common_first_names": ["João", "Maria", "José", "Ana", "Carlos", "Paula", "Paulo", "Juliana", "Pedro", "Fernanda", "Lucas", "Mariana", "Gabriel", "Camila", "Rafael", "Amanda", "Felipe", "Larissa", "Bruno", "Beatriz"],
+    "common_surnames": ["Silva", "Santos", "Oliveira", "Souza", "Rodrigues", "Ferreira", "Alves", "Pereira", "Lima", "Gomes", "Costa", "Ribeiro", "Martins", "Carvalho", "Almeida", "Lopes", "Soares", "Fernandes", "Vieira", "Barbosa"],
+    "street_types": ["Rua", "Avenida", "Travessa", "Alameda", "Praça", "R.", "Av."],
+    "neighborhoods": ["Centro", "Copacabana", "Ipanema", "Jardins", "Moema", "Vila Mariana", "Leblon", "Botafogo", "Tijuca", "Barra da Tijuca"]
+  },
+  "entity_types": {
+    "PER": "Person names",
+    "LOC": "Addresses/Locations",
+    "ID": "Identification numbers",
+    "PHONE": "Phone numbers",
+    "EMAIL": "Email addresses",
+    "SEX": "Gender information",
+    "DATE": "Date information"
+  },
+  "gender_terms": {
+    "spanish": ["masculino", "femenino", "M", "F", "hombre", "mujer", "varón"],
+    "portuguese": ["masculino", "feminino", "M", "F", "homem", "mulher"]
+  }
+}

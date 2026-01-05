@@ -1,0 +1,48 @@
+{
+  "thresholds": {
+    "ID": {
+      "threshold": 0.65,
+      "description": "Strict threshold for identification numbers - false positives are costly"
+    },
+    "PHONE": {
+      "threshold": 0.65,
+      "description": "Strict threshold for phone numbers - false positives are costly"
+    },
+    "EMAIL": {
+      "threshold": 0.5,
+      "description": "Balanced threshold - email format is quite distinctive"
+    },
+    "PER": {
+      "threshold": 0.35,
+      "description": "Lenient threshold for names - false negatives are worse than false positives"
+    },
+    "LOC": {
+      "threshold": 0.4,
+      "description": "Lenient threshold for locations - many edge cases exist"
+    },
+    "SEX": {
+      "threshold": 0.5,
+      "description": "Balanced threshold for gender terms"
+    },
+    "DATE": {
+      "threshold": 0.5,
+      "description": "Balanced threshold for dates"
+    }
+  },
+  "training": {
+    "test_size": 0.2,
+    "validation_size": 0.1,
+    "random_state": 42,
+    "stratify_by": "entity_type"
+  },
+  "xgboost_params": {
+    "max_depth": [6, 8, 10],
+    "learning_rate": [0.01, 0.05, 0.1],
+    "n_estimators": [100, 200, 300, 500],
+    "min_child_weight": [1, 3, 5],
+    "subsample": [0.8, 0.9, 1.0],
+    "colsample_bytree": [0.8, 0.9, 1.0],
+    "objective": "binary:logistic",
+    "eval_metric": ["logloss", "auc", "error"]
+  }
+}
