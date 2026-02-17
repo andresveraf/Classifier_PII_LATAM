@@ -22,6 +22,9 @@ This guide provides step-by-step instructions on how to use the PII Classifier f
 ### Step 1: Clone or Navigate to Repository
 
 ```bash
+# Clone the repository
+git clone https://github.com/andresveraf/Classifier_PII_LATAM.git
+
 cd Classifier_PII_LATAM
 ```
 
